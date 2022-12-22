@@ -1,0 +1,234 @@
+:root {
+  --borderColor: #ddd;
+  --contentTitle: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: var(--borderColor);
+}
+a {
+  text-decoration: none;
+  color: #0072b1;
+}
+
+.topContainer {
+  width: 794px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+#language{
+  padding: 0px 30px;
+  border-radius: 5px;
+}
+
+#pdfBtn {
+  padding: 5px 40px;
+  border: none;
+  background-color: rgb(223, 113, 113);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+#pdfBtn :hover {
+  box-shadow: 0px 0px 5px 0px gray;
+}
+#logoutBtn{
+  padding: 5px 40px;
+  border: none;
+  background-color: rgb(223, 113, 113);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  margin-right: 310px;
+}
+#logoutBtn :hover {
+  box-shadow: 0px 0px 5px 0px gray;
+}
+
+.maincontainer {
+  width: 794px;
+  min-height: 500px;
+  /* max-height: 1123px; */
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(49, 16, 16, 0.306);
+  padding: 30px 20px;
+}
+.header {
+  /* border: 1px solid; */
+  width: 100%;
+  height: 250px;
+  display: flex;
+}
+.namesurname {
+  font-size: 22px;
+}
+.profileImgContainer {
+  width: 200px;
+  height: 200px;
+  /* border: 1px solid; */
+}
+.profileImgContainer img {
+  width: 100%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 25px;
+}
+.profileInfosContainer {
+  /* background: linear-gradient(90deg, rgba(125,122,171,1) 0%, rgba(146,101,193,1) 0%, rgba(42,201,233,1) 100%); */
+  height: 100%;
+  flex: 1;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: 20px;
+
+  
+}
+.namesurname {
+  font-size: 25px;
+  margin-top: 25px;
+}
+.postTitle{
+  /* text-align: center; */
+  font-weight: bolder;
+  
+}
+.profileInfoText {
+  margin-top: 10px;
+  color: black;
+  text-indent: 15px;
+}
+.content {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 10px;
+  display: flex;
+}
+.leftContainer {
+  width: 200px;
+  min-height: 300px;
+}
+.contactContainer {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0px;
+}
+.contactContainer i {
+  color: #333;
+}
+.contactContainer a {
+  font-size: 12px;
+  color: #333;
+}
+#linkedin {
+  color: #0072b1;
+}
+#github {
+  color: #171515;
+}
+.leftSectionTitle {
+  font-size: 16px;
+  margin: 20px 0px;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skillsBox {
+  background-color: rgb(142, 142, 142);
+  color: #fff;
+  padding: 5px;
+  border-radius: 7px;
+}
+.languagesContainer {
+  margin-bottom: 10px;
+}
+.languagesTitle {
+  font-size: 16px;
+  color: #171515;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+.languagesDetail {
+  font-size: 12px;
+  color: #999;
+  font-style: italic;
+  padding-left: 5px;
+}
+/* content right */
+.rightContainer {
+  min-height: 300px;
+  flex: 1;
+  padding: 0px 20px;
+}
+.contentComponent {
+  border-left: 5px solid;
+  padding-left: 20px;
+  margin-top: 20px;
+  border-color: #0072b1;
+}
+.componentTitle {
+  padding-left: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  border-bottom: 1px solid var(--contentTitle);
+  color: var(--contentTitle);
+}
+.componentItemTitle {
+  font-size: 18px;
+  color: var(--contentTitle);
+}
+.componentItemSubTitle {
+  font-size: 14px;
+  color: var(--contentTitle);
+  margin-top: 4px;
+}
+.componentItemInfo {
+  color: black;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.componentItemDescription {
+  font-size: 14px;
+  color: var(--contentTitle);
+  margin-top: 4px;
+}
+.marginTop {
+  margin-top: 20px;
+}
+.borderBottom {
+  border-bottom: 1px solid var(--contentTitle);
+}
+.descriptionList {
+  padding-left: 30px;
+  margin-top: 5px;
+}
+.componentItemJobList {
+  font-size: 14px;
+  margin-top: 4px;
+}
+.marginTop5 {
+  margin: 5px;
+}
+.marginTop30 {
+  margin-top: 20px;
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9cb4fdbded.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="topContainer">
+      <button id="logoutBtn">LOGOUT</button>
+      <button id="pdfBtn">
+        <i class="fa-solid fa-file"></i> &nbsp; Download PDF
+      </button>
+      <select id="language">
+        <option value="tr">TR</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
+    <div class="maincontainer" id="myCv">
+      <div class="header">
+        <div class="profileImgContainer">
+          <img src="./images/profil.jpg" alt="profilFotoğrafı" />
+        </div>
+        <div class="profileInfosContainer">
+          <h3 class="namesurname postTitle" id="nameSurname">
+            Hüseyin KARPUZCU
+          </h3>
+          <h4 class="postTitle">FRONTEND - DEVELOPER</h4>
+          <p class="profileInfoText" id="personalDescription">
+            Junior React Frontend-Developer olarak , kendimi geliştirmeye devam
+            ediyorum ve çalışmalar yapıyorum, Ekip çalışmalarına uygun , pozitif
+            biriyim.
+          </p>
+          <p id="personalDescription2">
+            Her zaman araştırmaya ve öğrenmeye açığım.
+          </p>
+          <p id="personalDescription3">
+            Çalışmalarıma https://github.com/Hsynkrpzc adresinden
+            ulaşabilirsiniz.
+          </p>
+        </div>
+      </div>
+      <div class="content">
+        <!-- left side -->
+        <div class="leftContainer">
+          <div class="contactContainer">
+            <div><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <a href="mailto:hsynkrpzc@gmail.com">hsynkrpzc@gmail.com</a>
+            </div>
+          </div>
+          <div class="contactContainer">
+            <div><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <a href="tel:+905382583935">0538 258 3935</a>
+            </div>
+          </div>
+          <div class="contactContainer">
+            <div><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span>İstanbul, Türkiye</span>
+            </div>
+          </div>
+
+          <div class="contactContainer">
+            <div><i id="linkedin" class="fa-brands fa-linkedin"></i></div>
+            <div>
+              <a
+                href="https://tr.linkedin.com/in/h%C3%BCseyin-karpuzcu-09a8a6128?trk=people-guest_people_search-card"
+                >Linkedin</a
+              >
+            </div>
+          </div>
+          <div class="contactContainer">
+            <div><i id="github" class="fa-brands fa-github"></i></div>
+            <div>
+              <a href="https://www.github.com/Hsynkrpzc">GitHub</a>
+            </div>
+          </div>
+          <!-- SKILLS -->
+          <h3 class="leftSectionTitle" id="skillsTitle">YETENEKLER</h3>
+          <div class="skillsContainer">
+            <p class="skillsBox">HTML5</p>
+            <p class="skillsBox">CCS- CSS3</p>
+            <p class="skillsBox">Bootstrap - MATERIAL-UI</p>
+            <p class="skillsBox">JavaScript</p>
+            <p class="skillsBox">React.js</p>
+            <p class="skillsBox">Redux - Redux/Toolkit</p>
+            <p class="skillsBox">Git - GitHub</p>
+            <p class="skillsBox">TypeScript</p>
+          </div>
+          <!-- LANGUAGES -->
+          <h3 class="leftSectionTitle" id="languageTitle">DİLLER</h3>
+          <div class="languagesContainer">
+            <p class="languagesTitle">English</p>
+            <p class="languagesDetail marginTop5">2014 YDS 77.5</p>
+          </div>
+        </div>
+        <!-- right side -->
+        <div class="rightContainer">
+          <h2 class="componentTitle marginTop30" id="experienceTitle">
+            DENEYİM
+          </h2>
+          <div class="contentComponent">
+            <p class="componentItemSubTitle">* MAYIS 2022 - ARALIK 2022</p>
+            <p class="componentItemSubTitle">
+              UDEMIG REACT FRONT-END DEVELOPER
+            </p>
+          </div>
+          <h2 class="componentTitle marginTop" id="educationTitle">EĞİTİM</h2>
+          <div class="contentComponent">
+            <h3 class="componentItemTitle " id="firstEducationItem">
+              Frontend-Developer Eğitimi
+            </h3>
+            <h4 class="componentItemSubTitle marginTop5">
+              UDEMIG Frontend-Developer Eğitimi
+            </h4>
+            <p class="componentItemDescription marginTop5">
+              Eğitimim React-Redux , TypeScript ile derinleşmiştir. Eğitim
+              sürecinde yaptığım projeler GitHub'ımda paylaşılmıştır.
+            </p>
+            
+            <h3 class="componentItemTitle marginTop">MARMARA ÜNİVERSİTESİ</h3>
+            <h4 class="componentItemSubTitle">
+              İktidi ve İdari Bilimler Fakültesi
+            </h4>
+            <h5 class="componentItemSubTitle">İşletme Fakültesi</h5>
+            <p class="componentItemInfo">2007-2011</p>
+            <p class="componentItemDescription">
+              Yönetim kurulunda olduğum Marmara Üniversitesi İşletme Kulübü
+              olarak düzenlemiş olduğumuz bazı seminer ve konferanslar :
+            </p>
+            <ul class="descriptionList">
+              <li class="componentItemDescription">
+                Pazarlama Günleri 2009 – 2010
+              </li>
+              <li class="componentItemDescription">
+                Kariyer Günleri 2009 – 2010
+              </li>
+              <li class="componentItemDescription">Sektör Toplantıları 2008</li>
+              <li class="componentItemDescription">Geleceğin Liderleri 2009</li>
+            </ul>
+
+            <h3 class="componentItemTitle marginTop">Göksun Anadolu Lisesi</h3>
+            <p class="componentItemInfo">2003-2007</p>
+          </div>
+
+          <div>
+            <h2 class="componentTitle marginTop">ÇALIŞMALARIM</h2>
+            <div class="contentComponent">
+              <h2 class="componentItemTitle">Hospital App</h2>
+              <p class="componentItemInfo marginTop5">
+                <a href="https://github.com/Hsynkrpzc/Hospital-App"
+                  >Proje Linki</a
+                >
+              </p>
+              <p class="componentItemDescription marginTop5">
+                Projede hastaların hastahane veri tabanına eklenmesi -
+                düzenlenmesi - silinmesi , randevu ekleme - düzenleme- silme ,
+                hasta geçmişinin görüntülenmesi, hastaya uygulanan tedavilerin
+                görüntülenmesi, veri tabanı json-server hazırlanma işlemleri
+                yapılmıştır.
+              </p>
+              <ul class="descriptionList">
+                <li class="componentItemDescription">
+                  React ile yazılmış , State Management olarak Redux
+                  eklenmiştir.
+                </li>
+                <li class="componentItemDescription">
+                  Material Ui kütüphanesi kullanılmıştır.
+                </li>
+                <li class="componentItemDescription">
+                  Her hasta ayrı id ile ayrılmıştır, hastanın her işleminin
+                  id'si ayrıdır.
+                </li>
+                <li class="componentItemDescription">
+                  Hastaları search etmek için telefon numaraları ayrıştırıcı
+                  özellik olarak kullanılmıştır.
+                </li>
+                <li class="componentItemDescription">
+                  Componentlara ayrılarak , pageleme yöntemi kullanılmıştır.
+                </li>
+                <li class="componentItemDescription">
+                  Kodlar okunaklı yazılmıştır.
+                </li>
+              </ul>
+            </div>
+            <div class="contentComponent">
+              <h2 class="componentItemTitle">
+                Library App / Kütüphane Uygulaması
+              </h2>
+              <p class="componentItemInfo marginTop5">
+                <a href="https://github.com/Hsynkrpzc/React-Library-App"
+                  >Proje Linki</a
+                >
+              </p>
+              <p class="componentItemDescription marginTop5">
+                Projede kitapların veri tabanına eklenmesi ,Json veri tabanı
+                hazırlama , kitap ekleme - düzenleme- silme , kategori
+                ekleme-düzenleme-silme, işlemleri yapılmıştır.
+              </p>
+              <ul class="descriptionList">
+                <li class="componentItemDescription">
+                  React ile yazılmış , State Management olarak Redux
+                  eklenmiştir.
+                </li>
+                <li class="componentItemDescription">
+                  Bootstrap css kütüphanesi kullanılmıştır.
+                </li>
+                <li class="componentItemDescription">
+                  Componentlara ayrılarak , pageleme yöntemi kullanılmıştır.
+                </li>
+                <li class="componentItemDescription">
+                  Kodlar okunaklı yazılmıştır.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contentComponent">
+            <h2 class="componentItemTitle">
+              Alışveriş Sepeti Uygulaması / Shopping Cart App
+            </h2>
+            <p class="componentItemInfo marginTop5">
+              <a href="https://github.com/Hsynkrpzc/Alisveris-Sepeti"
+                >Proje Linki</a
+              >
+            </p>
+          </div>
+          <div class="contentComponent">
+            <h2 class="componentItemTitle">Afrika Tanıtım Projesi</h2>
+            <p class="componentItemInfo marginTop5">
+              <a href="https://github.com/Hsynkrpzc/Africa-publicity-project"
+                >Proje Linki</a
+              >
+            </p>
+          </div>
+          <div class="contentComponent">
+            <h2 class="componentItemTitle">
+              TODO APP/ Yapılacaklar Listesi Uygulaması
+            </h2>
+            <p class="componentItemInfo marginTop5">
+              <a
+                href="https://github.com/Hsynkrpzc/ToDoListApp--what-is-your-list"
+                >Proje Linki</a
+              >
+            </p>
+            <ul class="descriptionList">
+              <li class="componentItemDescription">
+                Uygulama Netlify 'da yayınlanmıştır'
+              </li>
+              <li class="componentItemDescription">
+                Bootstrap css kütüphanesi kullanılmıştır.
+              </li>
+              <li class="componentItemDescription">
+                Componentlara ayrılarak , pageleme yöntemi kullanılmıştır.
+              </li>
+              <li class="componentItemDescription">
+                Kodlar okunaklı yazılmıştır.
+              </li>
+            </ul>
+            <h3 class="componentItemSubTitle marginTop">
+              HTML ve Css projleri'de olmak üzere birçok çalışmam bulunmaktadır.
+            </h3>
+          </div>
+
+          <h2 class="componentTitle marginTop">İŞ GEÇMİŞİ</h2>
+          <div class="contentComponent">
+            <ul class="descriptionList">
+              <li class="componentItemDescription">
+                2011-2012 İstanbul Kültür Akademi Derneği Genel Sekreteri
+              </li>
+              <li class="componentItemDescription">
+                01/10/2016 - 20/12/2016 İÇÖZLER LTD. ŞTİ. Moda World giyim
+                mağazası satış danışmanlığı
+              </li>
+              <li class="componentItemDescription">
+                20/12/2016 – 01/01/2020 İÇÖZLER LTD. ŞTİ. VE ALTINÖZ A.Ş. Ön
+                Muhasebe Sorumlusu
+              </li>
+              <li class="componentItemDescription">
+                01/02/2020 – 01/05/2020 AVCITY Ön Muhasebe ve Finansman
+                Sorumlusu
+              </li>
+              <li class="componentItemDescription">
+                01.06.2020 – Trendyol Express İş Ortağı
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

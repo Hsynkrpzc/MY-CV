@@ -1,0 +1,87 @@
+const pdfBtn = document.getElementById("pdfBtn");
+const languageSelect = document.getElementById("language");
+
+const dictionary = [
+  {
+    id: "personalDescription",
+    tr: "Yazılım öğrenmeye başladığım günden sonra sürekli kendimi geliştirdim , projeler yapmak yazılımın mantığını anlamamda yardımcı oldu. Projelerde ezbere değil kendimden birşeyler katarak ilerledim, yapamadığım noktalarda W3School ve stackoverflow gibi döküman safalarından destek aldım.",
+    en: "After the day I started learning software, I constantly improved myself, making projects helped me understand the logic of the software. I progressed in the projects by adding something from myself, not by rote, and I got support from document pages such as W3School and stackoverflow where I couldn't.",
+  },
+  {
+    id: "educationTitle",
+    tr: "EĞİTİM",
+    en: "EDUCATION",
+  },
+  {
+    id: "firstEducationItem",
+    tr: "Frontend-Developer Eğitimi",
+    en: "Frontend Developer Education",
+  },
+  {
+    id: "skillsTitle",
+    tr: "YETENEKLER",
+    en: "SKILLS",
+  },
+  {
+    id: "languageTitle",
+    tr: "DİLLER",
+    en: "LANGUAGES",
+  },
+];
+
+pdfBtn.addEventListener("click", function () {
+  const myCv = document.getElementById("myCv");
+  const nameSurname = document.getElementById("nameSurname");
+  var opt = {
+    margin: 1,
+    filename: nameSurname.innerText + ".pdf",
+    image: { type: "jpeg", quality: 0.98 },
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+  };
+
+  // New Promise-based usage:
+  html2pdf().set(opt).from(myCv).save();
+});
+
+languageSelect.addEventListener("change", function (event) {
+  // console.log(event.target.value)
+  translate(event.target.value);
+});
+
+function translate(selectedLanguage) {
+  dictionary.map((item) => {
+    const element = document.getElementById(item.id);
+    switch (selectedLanguage) {
+      case "tr":
+        element.innerText = item.tr;
+        break;
+      case "en":
+        element.innerText = item.en;
+        break;
+      case "de":
+        element.innerText = item.de;
+        break;
+
+      default:
+        break;
+    }
+  });
+  // for (let i = 0; i < dictionary.length; i++) {
+  //   const element = document.getElementById(dictionary[i].id);
+  //   switch (selectedLanguage) {
+  //     case "tr":
+  //       element.innerText = dictionary[i].tr;
+  //       break;
+  //     case "en":
+  //       element.innerText = dictionary[i].en;
+  //       break;
+  //     case "de":
+  //       element.innerText = dictionary[i].de;
+  //       break;
+
+  //     default:
+  //       break;
+  //   }
+  // }
+}
