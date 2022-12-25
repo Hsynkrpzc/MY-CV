@@ -9,9 +9,12 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+@page{
+  size: A4 landscape;
+}
 body {
   background-color: var(--borderColor);
-  
+
 }
 a {
   text-decoration: none;
@@ -65,7 +68,7 @@ a {
   background-color: #fff;
   box-shadow: 0px 0px 10px 0px rgba(49, 16, 16, 0.306);
   padding: 30px 20px;
-  
+
 }
 .header {
   /* border: 1px solid; */
@@ -77,20 +80,29 @@ a {
   font-size: 22px;
 }
 .profileImgContainer {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 250px;
+  background-color: rgb(240, 190, 83);
   /* border: 1px solid; */
+  position: relative;
+  margin-left: -50px;
+ padding-right: -50px;
+ border-top-left-radius:10px ;
+ border-bottom-left-radius:10px ;
 }
 .profileImgContainer img {
-  width: 100%;
+
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-top: 25px;
+  margin-top: 20px;
+  margin-left: 50px;
+
+
 }
 .profileInfosContainer {
   /* background: linear-gradient(90deg, rgba(125,122,171,1) 0%, rgba(146,101,193,1) 0%, rgba(42,201,233,1) 100%); */
-  height: 100%;
+  height: 250px;
   flex: 1;
   padding: 10px 20px;
   display: flex;
@@ -99,21 +111,23 @@ a {
   color: black;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-left: 20px;
 
-  
+  z-index: 2;
+  background-color: rgb(240, 190, 83);
+
 }
 .namesurname {
   font-size: 25px;
-  margin-top: 25px;
+
 }
 .postTitle{
   /* text-align: center; */
   font-weight: bolder;
-  
+  margin-top: 15px;
+
 }
 .profileInfoText {
-  margin-top: 10px;
+  margin-top: 15px;
   color: black;
   text-indent: 15px;
 }
@@ -181,7 +195,7 @@ a {
   min-height: 300px;
   flex: 1;
   padding: 0px 20px;
-  
+
 }
 .contentComponent {
   border-left: 5px solid;
