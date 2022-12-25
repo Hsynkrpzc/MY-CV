@@ -1,13 +1,13 @@
-window.addEventListener("load", function () {
-  const dataFromLocalStorage = JSON.parse(localStorage.getItem("isLogin")); //string veriyi js ye çevirmek için JSON.parse
-  console.log(dataFromLocalStorage);
-  if (dataFromLocalStorage === null) {
-    localStorage.setItem("isLogin", JSON.stringify(false));
-  }
-  if (dataFromLocalStorage === null || dataFromLocalStorage === false) {
-    window.location.replace("http://127.0.0.1:5500/login.html");
-  }
-});
+// window.addEventListener("load", function () {
+//   const dataFromLocalStorage = JSON.parse(localStorage.getItem("isLogin")); //string veriyi js ye çevirmek için JSON.parse
+//   console.log(dataFromLocalStorage);
+//   if (dataFromLocalStorage === null) {
+//     localStorage.setItem("isLogin", JSON.stringify(false));
+//   }
+//   if (dataFromLocalStorage === null || dataFromLocalStorage === false) {
+//     window.location.replace("http://127.0.0.1:5500/login.html");
+//   }
+// });
 const pdfBtn = document.getElementById("pdfBtn");
 const langSelect = document.getElementById("language");
 const logoutBtn = document.getElementById("logoutBtn");
