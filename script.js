@@ -21,7 +21,7 @@ logoutBtn.addEventListener("click", function () {
 const dictionary = [
   {
     id: "personalDescription",
-    tr: "Junior React Frontend-Developer olarak , kendimi geliştirmeye devam ediyorum ve çalışmalar yapıyorum, Ekip çalışmalarına uygun , pozitifbiriyim.",
+    tr: "Junior React Frontend-Developer olarak , kendimi geliştirmeye devam ediyorum ve çalışmalar yapıyorum, Ekip çalışmalarına uygun , pozitif biriyim.",
     en: "I am constantly striving to improve.I am a positive person who works well in groups.",
   },
   {
